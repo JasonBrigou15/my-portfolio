@@ -21,7 +21,7 @@ function Contact() {
             href="mailto:jason.brigou@gmail.com"
             className="flex items-center gap-4 p-6 bg-slate-800 rounded-lg border-2 border-slate-700 hover:border-orange-400 transition"
           >
-            <div className="text-4xl"><img src="public/images/logos/outlook.svg" /></div>
+            <div className="text-4xl"><img src="/images/logos/outlook.svg" /></div>
             <div>
               <h3 className="text-xl font-semibold mb-1">Email</h3>
               <p className="text-gray-400">jason.brigou@gmail.com</p>
@@ -35,7 +35,7 @@ function Contact() {
             rel="noopener noreferrer"
             className="flex items-center gap-4 p-6 bg-slate-800 rounded-lg border-2 border-slate-700 hover:border-orange-400 transition"
           >
-            <div className="text-4xl"><img src="public/images/logos/linkedin.svg" /></div>
+            <div className="text-4xl"><img src="/images/logos/linkedin.svg" /></div>
             <div>
               <h3 className="text-xl font-semibold mb-1">LinkedIn</h3>
               <p className="text-gray-400">
