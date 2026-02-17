@@ -15,7 +15,7 @@ function Home() {
   }
 
     return (
-<div className="min-h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: 'url(/images/sunset-landscape.jpg)', backgroundPosition: 'center 0%' }}>
+<div className="min-h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/sunset-landscape.jpg)`, backgroundPosition: 'center 0%' }}>
         <div className="flex flex-col items-center justify-center" style={{ height: 'calc(80vh - 80px)' }}> 
             <h2 className="text-7xl font-bold text-white mb-4" style={textStyle}>HELLO WORLD!</h2>
             <h3 className="text-5xl font-bold text-white mb-2" style={textStyle}>I'M JASON BRIGOU</h3>

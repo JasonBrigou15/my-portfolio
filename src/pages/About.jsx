@@ -34,7 +34,7 @@ function About() {
           {/* Profile Section */}
           <div className="flex flex-col md:flex-row items-center gap-14 mb-12 ml-8">
             <img
-              src="/images/me.jpg"
+              src={`${import.meta.env.BASE_URL}images/me.jpg`}
               alt="Jason Brigou"
               className="w-48 h-48 rounded-3xl border-4 border-orange-400"
               style={{

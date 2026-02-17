@@ -19,15 +19,15 @@ function Projects() {
       ],
       images: [
         {
-          src: "/images/projects/visitor-registration/appointment.png",
+          src: `${import.meta.env.BASE_URL}images/projects/visitor-registration/appointment.png`,
           alt: "Appointment booking interface",
         },
         {
-          src: "/images/projects/visitor-registration/dashboard.png",
+          src: `${import.meta.env.BASE_URL}images/projects/visitor-registration/dashboard.png`,
           alt: "Admin dashboard",
         },
         {
-          src: "/images/projects/visitor-registration/admin-table.png",
+          src: `${import.meta.env.BASE_URL}images/projects/visitor-registration/admin-table.png`,
           alt: "Admin table view",
         },
       ],
@@ -49,15 +49,15 @@ function Projects() {
       ],
       images: [
         {
-          src: "/images/projects/restore/restoreHomepage.png",
+          src: `${import.meta.env.BASE_URL}images/projects/restore/restoreHomepage.png`,
           alt: "Restore homepage",
         },
         {
-          src: "/images/projects/restore/restoreShop.png",
+          src: `${import.meta.env.BASE_URL}images/projects/restore/restoreShop.png`,
           alt: "Shop page with filters",
         },
         {
-          src: "/images/projects/restore/restoreBasket.png",
+          src: `${import.meta.env.BASE_URL}images/projects/restore/restoreBasket.png`,
           alt: "Shopping basket",
         },
       ],
@@ -80,15 +80,15 @@ function Projects() {
       ],
       images: [
         {
-          src: "/images/projects/skinet/skinetHomepage.png",
+          src: `${import.meta.env.BASE_URL}images/projects/skinet/skinetHomepage.png`,
           alt: "SkiNet homepage",
         },
         {
-          src: "/images/projects/skinet/skinetShop.png",
+          src: `${import.meta.env.BASE_URL}images/projects/skinet/skinetShop.png`,
           alt: "Shop page with products",
         },
         {
-          src: "/images/projects/skinet/skinetDetail.png",
+          src: `${import.meta.env.BASE_URL}images/projects/skinet/skinetDetail.png`,
           alt: "Product detail page",
         },
       ],
