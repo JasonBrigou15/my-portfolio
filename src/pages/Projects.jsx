@@ -6,6 +6,37 @@ function Projects() {
   // All project data in one array
   const projects = [
     {
+      title: "MealMate",
+      description:
+        "A full-stack recipe sharing and meal planning web application. Users can discover and save community recipes, create their own, plan their weekly meals on an interactive grid, and automatically generate a shopping list from their meal plan. The shopping list works offline as a PWA so users can check items off at the supermarket without internet.",
+      note: "Hosted on Azure free tier — first load after inactivity may take 30-60 seconds.",
+      technologies: [
+        "Angular 21",
+        "ASP.NET Core",
+        "Entity Framework Core",
+        "SQL Server",
+        "ngx-translate",
+        "Angular PWA",
+        "Azure",
+        "C#",
+      ],
+      images: [
+        {
+          src: `${import.meta.env.BASE_URL}images/projects/mealmate/home.png`,
+          alt: "MealMate home page",
+        },
+        {
+          src: `${import.meta.env.BASE_URL}images/projects/mealmate/recipes.png`,
+          alt: "Recipe list",
+        },
+        {
+          src: `${import.meta.env.BASE_URL}images/projects/mealmate/meal-planner.png`,
+          alt: "Meal planner",
+        },
+      ],
+      liveUrl: "https://proud-ocean-0e77f9110.7.azurestaticapps.net",
+    },
+    {
       title: "Visitor Registration System",
       description:
         "A full-stack kiosk application built during my internship at Oncore for managing visitor check-ins and appointments. Visitors can self-register or book appointments with employees, while administrators manage all data through a secure dashboard. The system includes double-booking prevention, email-based returning visitor flow, and complete CRUD operations for companies, employees, visitors, and appointments.",
@@ -119,6 +150,11 @@ function Projects() {
             <p className="text-xl text-gray-300 mb-6 leading-relaxed">
               {project.description}
             </p>
+            {project.note && (
+              <p className="text-md text-gray-400 mb-6 italic">
+                {project.note}
+              </p>
+            )}
 
             {/* Tech Stack */}
             <div className="mb-6">
@@ -148,15 +184,29 @@ function Projects() {
               ))}
             </div>
 
-            {/* GitHub Link */}
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition font-semibold"
-            >
-              <span>View on GitHub →</span>
-            </a>
+            {/* Links */}
+            <div className="flex gap-4">
+              {project.githubUrl && (
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition font-semibold"
+                >
+                  <span>View on GitHub →</span>
+                </a>
+              )}
+              {project.liveUrl && (
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition font-semibold"
+                >
+                  <span>View Live →</span>
+                </a>
+              )}
+            </div>
           </div>
         ))}
 
